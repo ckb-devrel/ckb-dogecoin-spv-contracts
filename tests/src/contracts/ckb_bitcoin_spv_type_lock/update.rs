@@ -202,7 +202,10 @@ fn test_normal(case: NormalCase) {
             CellInput::new_builder().previous_output(out_point).build()
         };
 
-        let update = service.update(mem::take(&mut headers)).unwrap();
+        let tmp_headers = mem::take(&mut headers);
+        let tmp_doge_headers: Vec<core::DogecoinHeader> =
+            tmp_headers.into_iter().map(Into::into).collect();
+        let update = service.update(tmp_doge_headers).unwrap();
 
         let witness_spv_client = {
             let type_args = BytesOpt::new_builder()

@@ -72,6 +72,7 @@ fn test_normal(case: NormalCase) {
 
         let header_bin = utilities::find_bin_file(&headers_path, &filename);
         let header: core::Header = utilities::decode_from_bin_file(&header_bin).unwrap();
+        let doge_header: core::DogecoinHeader = header.into();
 
         log::trace!(
             "process header-{} from file {}",
@@ -81,7 +82,7 @@ fn test_normal(case: NormalCase) {
 
         let bootstrap = packed::SpvBootstrap::new_builder()
             .height(VPack::pack(&case.height))
-            .header(header.pack())
+            .header(doge_header.pack())
             .build();
 
         let service = DummyService::bootstrap(case.height, header).unwrap();
