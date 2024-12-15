@@ -273,7 +273,7 @@ checksum = "8b3b72a38c9920a29990df12002c4d069a147c8782f0c211f8a01b2df8f42bfd"
 [[package]]
 name = "ckb-bitcoin-spv-prover"
 version = "0.1.0"
-source = "git+https://github.com/EthanYuan/ckb-bitcoin-spv?rev=d4654a0#d4654a0f44a19a54fda674d030d8339c2b5df311"
+source = "git+https://github.com/EthanYuan/ckb-bitcoin-spv?rev=3c6691b#3c6691b1c67495e5e75a2f624912a7ad2e37c79e"
 dependencies = [
  "bitcoin 0.31.1 (git+https://github.com/EthanYuan/rust-bitcoin.git?rev=fbb08b70)",
  "ckb-bitcoin-spv-verifier",
@@ -293,7 +293,7 @@ dependencies = [
 [[package]]
 name = "ckb-bitcoin-spv-verifier"
 version = "0.1.0"
-source = "git+https://github.com/EthanYuan/ckb-bitcoin-spv?rev=d4654a0#d4654a0f44a19a54fda674d030d8339c2b5df311"
+source = "git+https://github.com/EthanYuan/ckb-bitcoin-spv?rev=3c6691b#3c6691b1c67495e5e75a2f624912a7ad2e37c79e"
 dependencies = [
  "bitcoin 0.31.1 (git+https://github.com/EthanYuan/rust-bitcoin.git?rev=fbb08b70)",
  "bitcoin_hashes",
