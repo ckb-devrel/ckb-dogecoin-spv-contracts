@@ -17,9 +17,9 @@ walkdir = "2.4"
 [dev-dependencies.ckb-bitcoin-spv-prover]
 version = "0.1.0"
 git = "https://github.com/EthanYuan/ckb-bitcoin-spv"
-rev = "9138a2b"
+rev = "d4654a0"
 
 [dev-dependencies.ckb-bitcoin-spv-verifier]
 version = "0.1.0"
 git = "https://github.com/EthanYuan/ckb-bitcoin-spv"
-rev = "9138a2b"
+rev = "d4654a0"

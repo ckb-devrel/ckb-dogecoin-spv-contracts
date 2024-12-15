@@ -130,7 +130,7 @@ dependencies = [
 [[package]]
 name = "bitcoin"
 version = "0.31.1"
-source = "git+https://github.com/EthanYuan/rust-bitcoin.git?rev=625e6571#625e6571ff52dde0ce4d877510c998aefa55fe8e"
+source = "git+https://github.com/EthanYuan/rust-bitcoin.git?rev=fbb08b70#fbb08b705c1b4676c1d156f5050880b7494984c4"
 dependencies = [
  "bech32",
  "bitcoin-internals",
@@ -273,9 +273,9 @@ checksum = "8b3b72a38c9920a29990df12002c4d069a147c8782f0c211f8a01b2df8f42bfd"
 [[package]]
 name = "ckb-bitcoin-spv-prover"
 version = "0.1.0"
-source = "git+https://github.com/EthanYuan/ckb-bitcoin-spv?rev=9138a2b#9138a2b9f6c9b6ea44cdf8546b2df47e464ffac2"
+source = "git+https://github.com/EthanYuan/ckb-bitcoin-spv?rev=d4654a0#d4654a0f44a19a54fda674d030d8339c2b5df311"
 dependencies = [
- "bitcoin 0.31.1 (git+https://github.com/EthanYuan/rust-bitcoin.git?rev=625e6571)",
+ "bitcoin 0.31.1 (git+https://github.com/EthanYuan/rust-bitcoin.git?rev=fbb08b70)",
  "ckb-bitcoin-spv-verifier",
  "log",
  "thiserror",
@@ -293,9 +293,9 @@ dependencies = [
 [[package]]
 name = "ckb-bitcoin-spv-verifier"
 version = "0.1.0"
-source = "git+https://github.com/EthanYuan/ckb-bitcoin-spv?rev=9138a2b#9138a2b9f6c9b6ea44cdf8546b2df47e464ffac2"
+source = "git+https://github.com/EthanYuan/ckb-bitcoin-spv?rev=d4654a0#d4654a0f44a19a54fda674d030d8339c2b5df311"
 dependencies = [
- "bitcoin 0.31.1 (git+https://github.com/EthanYuan/rust-bitcoin.git?rev=625e6571)",
+ "bitcoin 0.31.1 (git+https://github.com/EthanYuan/rust-bitcoin.git?rev=fbb08b70)",
  "bitcoin_hashes",
  "ckb-merkle-mountain-range 0.6.0",
  "log",
