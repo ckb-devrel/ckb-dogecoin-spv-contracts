@@ -6,8 +6,6 @@ use log::LevelFilter;
 mod data_helper;
 mod type_id;
 
-pub(crate) use ckb_bitcoin_spv_prover::utilities::decode_from_bin_file;
-pub(crate) use data_helper::{find_bin_file, find_bin_files};
 pub(crate) use type_id::calculate_type_id;
 
 pub(crate) fn setup() {
@@ -20,7 +18,7 @@ pub(crate) fn setup() {
     println!();
 }
 
-pub(crate) fn prev_client_id(current: u8, count: u8) -> u8 {
+pub(crate) fn _prev_client_id(current: u8, count: u8) -> u8 {
     if current == 0 {
         count - 1
     } else {
@@ -28,7 +26,7 @@ pub(crate) fn prev_client_id(current: u8, count: u8) -> u8 {
     }
 }
 
-pub(crate) fn next_client_id(current: u8, count: u8) -> u8 {
+pub(crate) fn _next_client_id(current: u8, count: u8) -> u8 {
     if current + 1 < count {
         current + 1
     } else {
