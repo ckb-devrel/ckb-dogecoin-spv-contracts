@@ -55,7 +55,7 @@ pub(crate) fn create_cells(indexes: &[usize], type_args: SpvTypeArgs) -> Result<
         }
     };
     // Gets the new client from the client bootstrap.
-    let mut expected_client = bootstrap.initialize_spv_client()?;
+    let mut expected_client = bootstrap.initialize_spv_client(type_args.flags)?;
     debug!("expected client cell (id=0): {}", expected_client.pack());
     // Next `clients_count` cells are the client cells;
     index += 1;
